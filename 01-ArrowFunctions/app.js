@@ -11,9 +11,9 @@ const selamVer3 = (ad) => { //Parametreli arrow function.
 };
 
 
-const topla = (sayi1,sayi2) => { //2 Parametreli arrow function.
-    return sayi1 + sayi2
-};
+const topla = (sayi1,sayi2,sayi3) => { //2 Parametreli arrow function.
+    return sayi1 + sayi2 + sayi3;
+}
 
 
 
