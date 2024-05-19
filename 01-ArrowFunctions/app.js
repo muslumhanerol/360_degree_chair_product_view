@@ -15,9 +15,7 @@ const topla = (sayi1,sayi2,sayi3) => { //2 Parametreli arrow function.
     return sayi1 + sayi2 + sayi3;
 }
 
-
-
 // selamVer();
 // selamVer2();
 // selamVer3("Müslüm");
-console.log(topla(4,6));
+// console.log(topla(4,6));
