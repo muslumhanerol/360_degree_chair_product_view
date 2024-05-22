@@ -48,4 +48,6 @@ let productName = {
     model : "Runner2024"
 }
 
+let pName = product.productName;
+
 console.log(product.price);
