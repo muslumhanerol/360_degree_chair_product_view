@@ -20,7 +20,7 @@ const selamVer4 = ad => {
     return console.log("Merhaba " + ad);
 }
 
-const topla2 = (sayi1,sayi2) => sayi1 + sayi2;
+const topla2 = (sayi1,sayi2) => sayi1 + sayi2; //2.adım= => sonra 5 + 20 işlemini yapacak, 25 i bulup console.log(topla2 içine yazıyor.
 
 
 // selamVer();
@@ -28,5 +28,6 @@ const topla2 = (sayi1,sayi2) => sayi1 + sayi2;
 // selamVer3("Müslüm");
 // console.log(topla(4,6));
 // selamVer4("Halil");
-console.log(topla2(2,20));
+
+console.log(topla2(5,20)); //1.adım= buradaki 5 i (sayı1) içine atayacak, 20 yi de (sayi2) içine atayacak 23. satırdaki parantez içi.
 
