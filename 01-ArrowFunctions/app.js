@@ -20,8 +20,8 @@ const selamVer4 = ad => {
     return console.log("Merhaba " + ad);
 }
 
-const topla2 = (sayi1,sayi2) => sayi1 + sayi2; //2.adım= => sonra 5 + 20 işlemini yapacak, 25 i bulup console.log(topla2 içine yazıyor.
-
+// ------------------------------------------------------------------------------------
+const topla2 = (sayi1,sayi2) => sayi1 + sayi2; //2.adım= => sonra 5 + 20 işlemini yapacak, 25 i bulup console.log(topla2 içine yazıyor ve ekrana yazdırılıyor. //burada süslü parantez kullanmakdık ve return demedik çünkü => gizli return diyebiliri.
 
 // selamVer();
 // selamVer2();
