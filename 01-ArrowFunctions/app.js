@@ -16,13 +16,17 @@ const topla = (sayi1,sayi2,sayi3) => { //2 Parametreli arrow function.
 }
 
 
-const selamVer4 = (ad) => {
+const selamVer4 = ad => {
     return console.log("Merhaba " + ad);
 }
+
+const topla2 = (sayi1,sayi2) => sayi1 + sayi2;
 
 
 // selamVer();
 // selamVer2();
 // selamVer3("Müslüm");
 // console.log(topla(4,6));
-selamVer4("Halil");
+// selamVer4("Halil");
+console.log(topla2(2,20));
+
