@@ -14,4 +14,19 @@ const calculateCircleArea2 = (...parametres) =>{
     return "Circle Area :" + r*r*pi;
 }
 
-console.log(calculateCircleArea2(5, 3.14));
+// ---------------------------------------------------------------
+//soru: içerisine gönderilen sayıları toplayıp, sonucu ekrana yazan arrow functionu hazırlayın.
+
+const getTotal = (...numbers) => {
+    let numberssArray = [...numbers];
+    let total = 0;
+    for(let i=0; i<numbers.length; i++){
+        total += numberssArray[i];
+    }
+    return total;
+}
+
+const basketItemsPrice = [135, 500, 900, 250];
+console.log(getTotal(...basketItemsPrice));
+
+// console.log(getTotal(5, 6, 55, 66, 44, 22, 64, 65));
