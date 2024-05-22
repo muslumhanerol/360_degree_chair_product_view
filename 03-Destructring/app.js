@@ -26,14 +26,26 @@
 // console.log(city);
 // console.log(country);
 
-// ------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
 
 //farklı bir yazım tekniği.
-let userInfo = ["muslumhan", "Muslum Han", "Erol", 48, "Gaziantep", "Türkiye"];
-let [userName,firstName,lastName,age, ...address] = userInfo; //sehir, ülke bilgilerini parametre içerisine aldık. eşleşme sonrası her bilgi parametre içerisinde yer ediniyor. yani age i silsem o da ...address içerisinde yer alır.
-console.log(userName);
-console.log(firstName);
-console.log(lastName);
-console.log(age);
-console.log(address);
+// let userInfo = ["muslumhan", "Muslum Han", "Erol", 48, "Gaziantep", "Türkiye"];
+// let [userName,firstName,lastName,age, ...address] = userInfo; //sehir, ülke bilgilerini parametre içerisine aldık. eşleşme sonrası her bilgi parametre içerisinde yer ediniyor. yani age i silsem o da ...address içerisinde yer alır.
+// console.log(userName);
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(address);
 
+// console.log(address.join("/")); //elemanları / ile birleştir dedik.
+
+
+//------------------------------------------------------------------------------
+
+let productName = {
+    productName : "Adidas",
+    price : 2760,
+    model : "Runner2024"
+}
+
+console.log(product.price);
