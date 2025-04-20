@@ -4,11 +4,12 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body a {
+/* Navigation css start */
+a {
     text-decoration: none;
 }
 
-body a ul {
+a ul {
     list-style: none;
 }
 
@@ -25,3 +26,34 @@ body a ul {
     max-width: 100%;
     max-height: 100%;
 }
+
+.left {
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.left select {
+    margin: 0px;
+    outline: none;
+    padding: 13px 8px;
+    background-color: rgba(235, 235, 235, 0.6);
+    font-size: 11px;
+    font-weight: 700;
+    border: none;
+}
+
+.right {
+    float: right;
+    padding: 10px 20px;
+    background-color: #f44c52;
+    border-radius: 10px;
+}
+
+.right a {
+    color: #fcfcfc;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Navigation css end */
