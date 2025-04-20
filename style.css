@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body a {
+    text-decoration: none;
+}
+
+body a ul {
+    list-style: none;
+}
+
+.navigation {
+    margin: 30px 20px;
+}
+
+.menu {
+    height: 13px;
+    margin: 0px 20px;
+}
+
+.menu img {
+    max-width: 100%;
+    max-height: 100%;
+}
