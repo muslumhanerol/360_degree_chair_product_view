@@ -4,7 +4,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* Navigation css start */
+/* Navigation Css Start */
+
 a {
     text-decoration: none;
 }
@@ -56,4 +57,34 @@ a ul {
     font-size: 12px;
 }
 
-/* Navigation css end */
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+/* Navigation Css End */
+
+.content-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin: 80px;
+}
+
+.img-container {
+    height: 450px;
+    width: 1027;
+    display: flex;
+    align-items: center;
+}
+
+.img-container img {
+    max-height: 100%;
+    max-width: 100%;
+}
