@@ -35,7 +35,12 @@
     <div class="content-container">
 
         <div class="img-container">
-            <a href="#"><img src="images/CAR.png"></a>
+            <a href="#" onclick="document.getElementById('modal-wrapper').style.display='block'"><img
+                    src="images/CAR.png"></a>
+
+            <button onclick="document.getElementById('modal-wrapper').style.display='block'">
+                <font style="font-weight: bold;">3D</font> View
+            </button>
         </div>
 
         <div class="text-container">
@@ -63,6 +68,7 @@
 
     <div id="modal-wrapper" class="modal">
         <div class="center">
+            <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close">&times;</span>
 
             <div class="rotation">
                 <img src="images/360/2.png">
@@ -110,10 +116,10 @@
                 <img src="images/360/44.png">
                 <img src="images/360/45.png">
             </div>
-
         </div>
-
     </div>
+
+    <script src="js/360deg.js"></script>
 
 </body>
 
