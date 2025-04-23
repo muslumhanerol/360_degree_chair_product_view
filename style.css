@@ -4,14 +4,19 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-/* --- */
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Header Css Start */
+
 header {
     color: #fff;
     padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: gray;
+    background-color: white;
     border-bottom: 1px solid #eee;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
@@ -28,7 +33,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #FA0050;
+    color: chocolate;
     text-decoration: none;
     font-style: italic;
 }
@@ -59,20 +64,10 @@ header {
     color: #333;
 }
 
-/* --- */
-
-/* Navigation Css Start */
-
-
-
-
-
-
-
 .btn-fill {
     padding: 8px 14px;
     border-radius: 8px;
-    background-color: #FA0050;
+    background-color: chocolate;
     color: white;
     font-weight: 600;
     text-decoration: none;
@@ -86,6 +81,22 @@ header {
     color: #FA0050;
 }
 
+.btn-outline {
+    padding: 8px 14px;
+    border: 1px solid chocolate;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-outline:hover {
+    border-radius: 8px;
+    background-color: white;
+    color: chocolate;
+}
+
 .lang-selection {
     display: flex;
     align-items: center;
@@ -93,10 +104,6 @@ header {
     font-size: 0.95rem;
     cursor: pointer;
     color: #333;
-}
-
-.lang-selection .fa-chevron-down {
-    color: black;
 }
 
 .basket-icon {
@@ -109,69 +116,78 @@ header {
     color: #FA0050;
 }
 
-/* a {
-    text-decoration: none;
-}
-
-a ul {
-    list-style: none;
-}
-
-.navigation {
-    margin: 30px 20px;
-}
-
-.menu {
-    height: 13px;
-    margin: 0px 20px;
-}
-
-.menu img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.left {
+.navbar-right {
     display: flex;
-    float: left;
     align-items: center;
+
+    gap: 10px;
 }
 
-.left select {
-    margin: 0px;
-    outline: none;
-    padding: 13px 8px;
-    background-color: rgba(235, 235, 235, 0.6);
-    font-size: 11px;
-    font-weight: 700;
-    border: none;
-}
-
-.right {
-    float: right;
-    padding: 10px 20px;
-    background-color: #f44c52;
-    border-radius: 10px;
-}
-
-.right a {
-    color: #fcfcfc;
-    font-weight: bold;
-    font-size: 12px;
-} */
-
-.logo {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.logo img {
-    height: 80px;
-}
-
-/* Navigation Css End */
+/* Header Css End */
 
 /* ----------------------------------------------------------------------------------------- */
+
+.sec-description-bar {
+    display: grid;
+    grid-template-columns: repeat(12,
+            1fr);
+    grid-template-rows: auto;
+    max-width: 1440px;
+    margin: 0;
+    padding: 0 10px;
+}
+
+.description-bar-content {
+    grid-column: 1 / 8;
+    margin: auto;
+}
+
+.description-bar-img {
+    grid-column: 8 / 12;
+}
+
+.description-bar-img img {
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description-bar-content h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #222;
+}
+
+.description-bar-content input {
+    grid-column: 1 / 11;
+    padding: 10px 15px;
+    position: relative;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+}
+
+.description-bar-search {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+
+.description-bar-search a {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    color: #fff;
+    padding: 15px;
+    position: relative;
+    margin-left: 10px;
+    background-color: #FA0050;
+    border-radius: 8px;
+}
+
+
+
+
 
 /* text-container start */
 .content-container {
