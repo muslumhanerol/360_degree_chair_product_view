@@ -5,8 +5,93 @@ body {
 }
 
 /* Navigation Css Start */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
 
-a {
+.navbar-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FA0050;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-outline {
+    padding: 8px 14px;
+    border: 1px solid #a60d3e9c;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #f8d7af;
+}
+
+.btn-fill {
+    padding: 8px 14px;
+    border-radius: 8px;
+    background-color: #FA0050;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-fill:hover {
+    border: 1px solid #FA0050;
+    border-radius: 8px;
+    background-color: white;
+    color: #FA0050;
+}
+
+.lang-selection {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.lang-selection .fa-chevron-down {
+    color: black;
+}
+
+.basket-icon {
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+.basket-icon:hover {
+    color: #FA0050;
+}
+
+/* a {
     text-decoration: none;
 }
 
@@ -55,15 +140,15 @@ a ul {
     color: #fcfcfc;
     font-weight: bold;
     font-size: 12px;
-}
+} */
 
 .logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .logo img {
-    height: 40px;
+    height: 80px;
 }
 
 /* Navigation Css End */
@@ -194,7 +279,7 @@ button {
     text-shadow: 0px 2px 12px rgba(0, 0, 0, 0.6);
     color: white;
     padding: 14px 20px;
-    margin: 8px 26px;
+    margin: 5px 26px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
@@ -202,10 +287,46 @@ button {
     position: absolute;
     width: 200px;
     bottom: 0px;
-    left: 70%;
+    left: 82%;
     transform: translateX(-70%);
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        padding: 10px 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .navbar-right {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
