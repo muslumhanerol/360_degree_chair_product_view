@@ -1,4 +1,4 @@
-# 360_degree_product_view
+# 360_degree_chair_product_view
 
 #
 
